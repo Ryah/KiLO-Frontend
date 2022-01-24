@@ -1,0 +1,76 @@
+@import 's-grid-settings'
+// you can overwrite settings here
+@import 's-grid-functions'
+// @import 's-grid-classes'
+@import 'variables'
+@import 'mixins'
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic');
+
+body
+    background linear-gradient(to right, rgb(21, 87, 153), rgb(21, 153, 87))
+
+.sidenav
+    height 100%
+    width 0px
+    position fixed
+    z-index 1
+    top 0px
+    left 0px
+    overflow-x hidden
+    padding-top 60px
+    transition 0.5s
+    background-color rgb(17, 17, 17)
+    a
+        padding 8px 8px 8px 32px
+        text-decoration none
+        font-size 25px
+        color rgb(129, 129, 129)
+        display block
+        transition 0.3s
+        &:hover
+            color rgb(241, 241, 241)
+    .closebtn
+        position absolute
+        top 0px
+        right 25px
+        font-size 36px
+        margin-left 50px
+
+@media screen and (max-height: 450px)
+    .sidenav
+        padding-top 15px
+        a
+            font-size 18px
+
+
+#sidebarOverlay
+    position fixed
+    padding-left 50px
+    width 80px
+    left 0px
+    top 0px
+    height 100%
+    background-color rgb(17, 17, 17)
+
+#TopNavbar
+    position absolute
+    left 0px
+    top 0px
+    height 100px
+    width 100%
+    background-color #67B108
+
+.main-grid
+    margin-top 100px
+    grid(cells-align: 'center')
+    .skin-cell
+        padding-left rem-calc(700)
+        cell(1,2)
+        cell(1,3)
+        font 32px "Roboto", sans-serif
+        clearfix()
+        @media screen and (min-width: rem-calc(breakpoints[md]))
+            cell(1, 2)
+            padding-right rem-calc(200)
+    h2:first-letter
+        color: green
