@@ -2,7 +2,7 @@ One of the beta archives of the source code for the 2018 website of KiloClient, 
 
 I found it laying on an old hard drive. 
 
-Not complete as this project was halted in the middle of a complete rewrite due to KiloClient stopping development as Connor went MIA with the updated source. As such there was no backend to connect the frontend to. 
+Not complete as this project was halted in the middle of a complete rewrite due to KiloClient stopping development as Connor went MIA and Awit lost motivation (and refused to give anyone else the updated client source code). As such there was no backend to connect the frontend to. 
 
 Considering the only additions to this archive was making DOOM playable with dosbox.js by typing in the Godmode cheat on the homepage, this is about as feature complete as the site got before development was halted. 
 
